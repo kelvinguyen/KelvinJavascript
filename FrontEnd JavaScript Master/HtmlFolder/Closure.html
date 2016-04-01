@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Closure</title>
+        <link rel ="stylesheet" type="text/css" href="../CSS-Folder/theme.css">
+    </head>
+    <body>
+        <h1> Closure</h1>
+        
+        <div>
+            <h3>How function run behind the scence</h3>
+            <img src="../ImageFolder/HowFunctionWorkBehindTheScence.PNG">
+            <h5>Explain the image above</h5>
+            <ol>
+                <li>
+                    The browser will create the SUM variable and point to a function {fn} . Then the {fn} PROTOTYPE will point to object. At this point, javascript will not know what is inside the {fn}.
+                </li>
+                <li>
+                    browser will create variable a with the value of 1
+                </li>
+                <li>
+                    browser will create object b and this object will have val variable with value 2
+                </li>
+                <li>
+                    Now, the sum function is evaluated. local scope variable x is assign value of 1, and y is point to object b
+                </li>
+                <li>
+                    now, inside the function is evaluated. x = 2 and b.value = 3
+                </li>
+                <li>
+                    Then c variable is created and has the result of function as 5
+                </li>
+                <li>
+                    x,y is out of scope and gabage collection remove it
+                    finally, the result will display as follow
+                    a = 1;
+                    b = 3;
+                    c = 5;
+                </li>
+            </ol>
+        </div>
+        <div>
+            <h3>Closure</h3>
+            <p>
+                A closure is an inner function that has access to the outer (enclosing) function's variables—scope chain. The closure has three scope chains: it has access to its own scope (variables defined between its curly brackets), it has access to the outer function's variables, and it has access to the global variables
+            </p>
+            <img src="../ImageFolder/closureLinkingChainInnerFunction.PNG">
+        </div>
+        
+        <a href = "../index.html">
+            <strong><h4>HOME</h4></strong>
+        </a>
+    </body>
+</html>
